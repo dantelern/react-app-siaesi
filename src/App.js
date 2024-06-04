@@ -6,9 +6,8 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Cambia la URL a la nueva dirección del sitio que deseas consultar
     console.log('Realizando fetch a la API...');
-    fetch('https://api.example.com/data')
+    fetch('https://db-esi.vercel.app/')
       .then(response => {
         console.log('Respuesta recibida:', response);
         return response.json();
@@ -31,7 +30,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://siaesi.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
