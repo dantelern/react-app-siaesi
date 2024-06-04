@@ -19,7 +19,7 @@ function App() {
         <h1>Datos del Backend</h1>
         {data ? <p>{data}</p> : <p>Cargando...</p>}
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Vengo de <code>src/App.js</code>
         </p>
         <a
           className="App-link"
