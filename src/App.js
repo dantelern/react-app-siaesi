@@ -15,18 +15,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
         <h1>Datos del Backend</h1>
         {data ? <p>{data}</p> : <p>Cargando...</p>}
-      </header>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
