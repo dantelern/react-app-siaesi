@@ -29,8 +29,9 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
+    // Cambia la URL a la nueva dirección del sitio que deseas consultar
     console.log('Realizando fetch a la API...');
-    fetch('https://db-esi.vercel.app/')
+    fetch('https://api.example.com/data')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -49,20 +50,18 @@ function Data() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Datos del Backend</h1>
-        {data ? (
-          <div>
-            {Object.entries(data).map(([key, value]) => (
-              <div key={key}>
-                <strong>{key}:</strong> {JSON.stringify(value)}
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p>Cargando...</p>
-        )}
-        <Link className="App-link" to="/">
-          Volver a la página principal
-        </Link>
+        {data ? <p>{JSON.stringify(data)}</p> : <p>Cargando...</p>}
+        <p>
+          Vengo de <code>src/App.js</code>
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
     </div>
   );
