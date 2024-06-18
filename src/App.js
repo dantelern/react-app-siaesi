@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
+  Routes,
   Link
 } from 'react-router-dom';
 import './App.css';
@@ -29,7 +29,6 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    // Cambia la URL a la nueva dirección del sitio que deseas consultar
     console.log('Realizando fetch a la API...');
     fetch('https://api.example.com/data')
       .then(response => {
@@ -70,10 +69,10 @@ function Data() {
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/api/data" component={Data} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/api/data" element={<Data />} />
+      </Routes>
     </Router>
   );
 }
