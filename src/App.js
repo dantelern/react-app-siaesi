@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import logo from './logo.svg';
+import DataDisplay from './DataDisplay.js';
 
 function Home() {
   return (
@@ -71,7 +72,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/api/data" element={<Data />} />
+        <Route path="/api/data" element={<DataDisplay />} />
       </Routes>
     </Router>
   );
