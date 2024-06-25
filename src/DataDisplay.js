@@ -12,7 +12,7 @@ const DataDisplay = () => {
 
   return (
     <div>
-      <h1>Data from Database</h1>
+      <h1>Data de base de datos</h1>
       <ul>
         {data.map(item => (
           <li key={item.id}>{item.nombre}</li> // Ajusta esto según tu estructura de datos
