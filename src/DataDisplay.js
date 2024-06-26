@@ -4,7 +4,7 @@ const DataDisplay = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/data')
+    fetch('https://db-esi.vercel.app/') /// http://localhost:3001/api/data
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error agarrando datos:', error));
@@ -15,7 +15,7 @@ const DataDisplay = () => {
       <h1>Data de base de datos</h1>
       <ul>
         {data.map(item => (
-          <li key={item.id}>{item.nombre}</li> // Ajusta esto según tu estructura de datos
+          <li key={item.id}>{item.nombre}</li> 
         ))}
       </ul>
     </div>
