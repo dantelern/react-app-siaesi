@@ -13,7 +13,6 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Bienvenido a la aplicación React</h1>
         <p>
           Vengo de <code>src/App.js</code>
