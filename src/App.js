@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import DataDisplay from './DataDisplay.js';
-import axios from 'axios';
 
 function Home() {
   return (
