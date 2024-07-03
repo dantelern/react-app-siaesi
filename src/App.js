@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import DataDisplay from './DataDisplay.js';
+import './server.js';
+import app from './server.js';
 
 function Home() {
   return (
@@ -70,6 +72,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/api/data" element={<DataDisplay />} />
+        <Route path="/users" element={<app />}/>
       </Routes>
     </Router>
   );
