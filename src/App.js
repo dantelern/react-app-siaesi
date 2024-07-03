@@ -46,7 +46,6 @@ function Data() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>Datos del Backend</h1>
         {data ? <p>{JSON.stringify(data)}</p> : <p>Cargando...</p>}
         <p>
