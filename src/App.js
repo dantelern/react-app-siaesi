@@ -6,8 +6,8 @@ import {
   Link
 } from 'react-router-dom';
 import './App.css';
-import logo from './logo.svg';
 import DataDisplay from './DataDisplay.js';
+import axios from 'axios';
 
 function Home() {
   return (
